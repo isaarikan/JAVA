@@ -1,0 +1,57 @@
+
+public class AnaSınıf1 {
+	int a,b;
+	
+	public AnaSınıf1(){
+		
+		
+	}
+	public AnaSınıf1(int a,int b){
+		this.a=a;
+		this.b=b;
+		
+		System.out.println("Ben Anasınıfın içindeki metodum");
+		
+	}
+	
+	public void göster(){
+		
+		System.out.println("1.sayı "+a+" 2.sayı"+b);
+		
+	}
+
+}
+
+public class AltSınıf extends AnaSınıf1{
+	
+	
+	int a;
+
+	public AltSınıf() {
+	//Üst sınıfın constructırına parametre gönderiyoruz	
+	 super(1,2);
+	 
+	 
+	 //Üst sınıftaki göster metodunu çağırıyoruz
+	 super.göster();
+	}
+	
+	
+
+}
+
+
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		AltSınıf a=new AltSınıf();
+		
+	}
+	
+	
+	
+	
+
+}
