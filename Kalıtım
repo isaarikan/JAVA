@@ -1,0 +1,60 @@
+public class MatematikIslemleri {
+	int sonuc=0;
+	
+	public  int topla(int a,int b){
+		sonuc=a+b;
+		return sonuc;
+	
+	}
+	
+	public int cıkar(int a, int b){
+		sonuc=a-b;
+		return sonuc;
+	}
+	public int carp(int a, int b){
+		sonuc=a*b;
+		return sonuc;
+	}
+
+	public int bol(int a, int b){
+		sonuc=a/b;
+		return sonuc;
+	}
+
+
+}
+
+public class DigerIslem extends MatematikIslemleri{
+	int sonuc=0;
+	
+	
+	public int üsAl(int a,int b){
+	sonuc=(int) Math.pow(a, b);	
+	return sonuc;
+	
+	
+	
+		
+	}
+
+}
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		DigerIslem islem=new DigerIslem();
+		
+		
+		System.out.println(islem.topla(12, 23));
+		System.out.println(islem.üsAl(2,3));
+		System.out.println(islem.cıkar(2, 3));
+
+	}
+
+}
+
+
+
