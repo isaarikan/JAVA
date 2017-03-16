@@ -1,0 +1,96 @@
+Whatsappa atılan sorunun çözümü
+
+
+
+public class Araba {
+	private String arabaTürü;
+	private int yas;
+	private String ad;
+	
+	public Araba(String arabaTürü,int yas,String ad){
+		this.ad=ad;
+		this.yas=yas;
+		this.ad=ad;
+		
+	}	
+	public void bilgiGöster(){
+		
+		
+		System.out.println("Araba Türü "+this.arabaTürü+" Araba Yaşı"+this.yas+" Araba Adı"+this.ad);
+	}
+	
+	public String getArabaTürü() {
+		return arabaTürü;
+	}
+	
+	
+	
+	public void setArabaTürü(String arabaTürü) {
+		this.arabaTürü = arabaTürü;
+	}
+	public int getYas() {
+		return yas;
+	}
+	public void setYas(int yas) {
+		this.yas = yas;
+	}
+	public String getAd() {
+		return ad;
+	}
+	public void setAd(String ad) {
+		this.ad = ad;
+	}
+  
+  
+  
+
+}
+
+public class Mercedes extends Araba implements Arabc{
+	
+	String ad="Mercedes";
+	
+	String arabatürü="Kamyon";
+	int yas=3;
+	
+
+	
+	public Mercedes(String ad,String arabatürü,int yas){
+		super(ad,yas,arabatürü);
+		
+	}
+	
+	public void show(){
+		
+		super.bilgiGöster();
+	}
+
+	@Override
+	public void arabaİsminiGoster() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Mercedes");
+		
+	}
+
+}
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		
+		Mercedes mer=new Mercedes("araba","veya",12);
+		mer.bilgiGöster();
+		
+
+	}
+
+}
+
+
+
