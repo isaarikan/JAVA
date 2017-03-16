@@ -1,0 +1,28 @@
+
+public interface Animal {
+	
+	public void sesCıkar();
+	
+
+}
+
+
+public class Kedi implements Animal{
+
+	@Override
+	public void sesCıkar() {
+		System.out.println("Miyav");
+	}
+
+}
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Kedi a=new Kedi();
+			a.sesCıkar();
+	}
+
+}
